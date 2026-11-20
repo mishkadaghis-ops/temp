@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AMAKIN JO — اللوغو والأيقونات · تنزيل SVG و PNG</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='3' y='3' width='58' height='58' rx='14' fill='%23141419' stroke='%23C9A24B' stroke-width='4'/%3E%3Cpolygon points='32,15 35.6,25 45.6,21.6 40.1,30.6 49,36.2 38.6,37.5 39.6,47.8 32,40.6 24.4,47.8 25.4,37.5 15,36.2 23.9,30.6 18.4,21.6 28.4,25' fill='%23C9A24B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Reem+Kufi:wght@400;600;700&family=Alexandria:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0C0C10;--coal:#141419;--gray:#2E2E36;--ivory:#F5F0E6;--cream:#F8F4EA;--sand:#EAE2D0;
+  --brass:#C9A24B;--brassD:#9A742B;--champ:#E9CF8B;--crimson:#C8102E;--crimsonL:#E23A4E;
+  --emerald:#0F7A55;--emeraldL:#2FB98A;--warn:#D9A13B;--success:#178A5B;--info:#2E6FE0;
+  --bg:#EFE9DB;--card:#FBF7EE;--card2:#F3EDDF;--text:#14141A;--muted:#6C6455;
+  --line:#DDD3BE;--line2:#C9BDA2;--track:#E2D9C4;--thumb:#C9A24B;--thumbH:#9A742B;--navH:64px;
+}
+:root[data-theme=dark]{
+  --bg:#0B0B0F;--card:#13131A;--card2:#181820;--text:#F5F0E6;--muted:#9A927D;
+  --line:#262630;--line2:#3A3A46;--track:#23232C;--thumb:#C9A24B;--thumbH:#E9CF8B;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme=light]){
+    --bg:#0B0B0F;--card:#13131A;--card2:#181820;--text:#F5F0E6;--muted:#9A927D;
+    --line:#262630;--line2:#3A3A46;--track:#23232C;--thumb:#C9A24B;--thumbH:#E9CF8B;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Alexandria,sans-serif;font-size:15px;line-height:1.7;transition:background .4s,color .4s;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.05;mix-blend-mode:soft-light;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+::selection{background:var(--brass);color:var(--night)}
+::-webkit-scrollbar{width:11px;height:11px}
+::-webkit-scrollbar-track{background:var(--track)}
+::-webkit-scrollbar-thumb{background:var(--thumb);border-radius:8px;border:2px solid var(--track)}
+::-webkit-scrollbar-thumb:hover{background:var(--thumbH)}
+*{scrollbar-width:thin;scrollbar-color:var(--thumb) var(--track)}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.wrap{max-width:1240px;margin:auto;padding:0 22px}
+nav{position:fixed;top:0;right:0;left:0;height:var(--navH);z-index:50;display:flex;align-items:center;gap:16px;padding:0 22px;
+  background:color-mix(in srgb,var(--bg) 84%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navBrand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.navBrand svg{width:36px;height:36px}
+.navBrand .t{line-height:1.2}
+.navBrand .t b{font-family:"Reem Kufi";font-weight:700;font-size:14px;display:block}
+.navBrand .t span{font-family:"Space Grotesk";font-weight:700;font-size:8.5px;letter-spacing:.3em;color:var(--brassD);direction:ltr;display:block}
+:root[data-theme=dark] .navBrand .t span{color:var(--brass)}
+.navLinks{display:flex;gap:4px;margin-inline-start:auto;overflow-x:auto;scrollbar-width:none}
+.navLinks::-webkit-scrollbar{display:none}
+.navLinks a{font-size:13px;font-weight:600;color:var(--muted);padding:7px 13px;border-radius:99px;white-space:nowrap;border:1px solid transparent;transition:.25s}
+.navLinks a:hover{color:var(--text);border-color:var(--line2)}
+.navLinks a.active{color:var(--night);background:var(--brass);border-color:var(--brass)}
+.navActs{display:flex;gap:8px;flex-shrink:0}
+.iconBtn{height:38px;padding:0 14px;border-radius:99px;border:1px solid var(--line2);background:var(--card);color:var(--text);font-size:12.5px;font-weight:600;display:flex;align-items:center;gap:7px;transition:.25s}
+.iconBtn:hover{border-color:var(--brass);box-shadow:0 0 0 3px color-mix(in srgb,var(--brass) 18%,transparent);transform:translateY(-1px)}
+header{padding:calc(var(--navH) + 40px) 0 24px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--emerald);border:1px solid color-mix(in srgb,var(--emerald) 40%,transparent);background:color-mix(in srgb,var(--emerald) 9%,transparent);padding:5px 14px;border-radius:99px}
+:root[data-theme=dark] .eyebrow{color:var(--emeraldL)}
+header h1{font-family:"Reem Kufi";font-weight:700;font-size:clamp(28px,4.4vw,44px);margin-top:14px;line-height:1.3}
+header h1 em{font-style:normal;color:var(--brassD)}
+:root[data-theme=dark] header h1 em{color:var(--champ)}
+header p{color:var(--muted);max-width:720px;margin-top:8px;font-size:14.5px}
+section{scroll-margin-top:calc(var(--navH) + 14px)}
+.studio{display:grid;grid-template-columns:1fr 372px;gap:20px;align-items:start;padding-bottom:26px}
+.stageCol{min-width:0}
+.stage{position:relative;border-radius:26px;border:1px solid var(--line);overflow:hidden;min-height:400px;display:flex;align-items:center;justify-content:center;padding:52px 40px;transition:background .4s}
+.stage.v-light.solid{background:#FFFFFF}
+.stage.v-dark.solid{background:#0C0C10}
+.stage.clear{background:repeating-conic-gradient(color-mix(in srgb,var(--text) 7%,transparent) 0 25%,transparent 0 50%) 0 0/26px 26px,var(--card)}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;opacity:.14;animation:drift 18s ease-in-out infinite alternate}
+.orb.o1{width:300px;height:300px;background:radial-gradient(circle,var(--brass),transparent 70%);top:-130px;right:-100px}
+.orb.o2{width:280px;height:280px;background:radial-gradient(circle,var(--crimson),transparent 70%);bottom:-140px;left:-80px;animation-delay:-7s}
+.stage.clear .orb{display:none}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(40px,-30px) scale(1.15)}}
+.stageTag{position:absolute;top:14px;right:18px;z-index:3;font-family:"Space Grotesk";font-size:10px;letter-spacing:.3em;color:var(--muted);direction:ltr}
+.stage.v-dark.solid .stageTag{color:#8d8672}
+#stageLogo{position:relative;z-index:2;width:100%;display:flex;justify-content:center}
+.stage-svg{height:auto;overflow:visible;max-width:100%}
+.proof{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px}
+.proof .cap{font-size:12px;font-weight:600;color:var(--muted);margin-inline-end:auto;align-self:center}
+.proof .p{text-align:center}
+.proof .p small{display:block;font-family:"Space Grotesk";font-size:10px;color:var(--muted);margin-top:6px;letter-spacing:.12em}
+.proof svg{display:block}
+.avatarProof{border-radius:50%}
+.panel{position:sticky;top:calc(var(--navH) + 14px);max-height:calc(100vh - var(--navH) - 28px);overflow-y:auto;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px 18px}
+.panel h3{font-family:"Reem Kufi";font-size:15px;color:var(--brass);display:flex;align-items:center;gap:8px;margin:18px 0 10px}
+.panel h3:first-child{margin-top:0}
+.panel h3::after{content:"";flex:1;height:1px;background:linear-gradient(to left,var(--line),transparent)}
+.panel .note{font-size:11px;color:var(--muted);background:var(--card2);border:1px dashed var(--line2);border-radius:11px;padding:8px 11px;margin-bottom:12px;line-height:1.8}
+.ctl{margin-bottom:13px}
+.ctl label{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;font-weight:600;margin-bottom:7px}
+.ctl label output{font-family:"Space Grotesk";font-size:11px;color:var(--brassD);background:color-mix(in srgb,var(--brass) 14%,transparent);padding:1px 8px;border-radius:99px;direction:ltr}
+:root[data-theme=dark] .ctl label output{color:var(--champ)}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg button{flex:1;min-width:64px;padding:8px 6px;font-size:11.5px;font-weight:600;border-radius:11px;border:1px solid var(--line2);background:transparent;color:var(--muted);transition:.2s}
+.seg button:hover{color:var(--text);border-color:var(--brass)}
+.seg button.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:99px;background:linear-gradient(to left,var(--brass) var(--p,50%),var(--track) var(--p,50%));outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:19px;height:19px;border-radius:50%;background:var(--ivory);border:5px solid var(--brass);box-shadow:0 2px 8px rgba(0,0,0,.25);transition:transform .15s}
+input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.18)}
+input[type=range]::-moz-range-thumb{width:15px;height:15px;border-radius:50%;background:var(--ivory);border:5px solid var(--brass)}
+.ctl.dim{opacity:.42}
+.colorRow{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+input[type=color]{-webkit-appearance:none;appearance:none;width:42px;height:34px;border:none;border-radius:10px;background:none;padding:0;cursor:pointer}
+input[type=color]::-webkit-color-swatch-wrapper{padding:0}
+input[type=color]::-webkit-color-swatch{border-radius:10px;border:2px solid var(--line2)}
+input[type=color]::-moz-color-swatch{border-radius:10px;border:2px solid var(--line2)}
+.hex{font-family:"Space Grotesk";font-size:11px;color:var(--muted);direction:ltr}
+.sws{display:flex;gap:6px;margin-inline-start:auto}
+.sws button{width:24px;height:24px;border-radius:8px;border:2px solid var(--line2);transition:.15s}
+.sws button:hover{transform:scale(1.16);border-color:var(--text)}
+.tglRow{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;font-weight:600;padding:7px 0}
+.tgl{position:relative;width:42px;height:24px;flex-shrink:0}
+.tgl input{opacity:0;width:100%;height:100%;position:absolute;cursor:pointer;z-index:2;margin:0}
+.tgl i{position:absolute;inset:0;border-radius:99px;background:var(--track);border:1px solid var(--line2);transition:.25s}
+.tgl i::after{content:"";position:absolute;top:3px;right:3px;width:16px;height:16px;border-radius:50%;background:var(--muted);transition:.25s}
+.tgl input:checked + i{background:var(--emerald);border-color:var(--emerald)}
+.tgl input:checked + i::after{right:21px;background:var(--ivory)}
+.btnRow{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.btn{flex:1;min-width:90px;padding:10px 10px;border-radius:13px;font-size:12.5px;font-weight:800;border:1px solid var(--line2);background:transparent;color:var(--text);transition:.2s;display:flex;align-items:center;justify-content:center;gap:6px}
+.btn:hover{transform:translateY(-2px);border-color:var(--brass);box-shadow:0 8px 20px rgba(0,0,0,.14)}
+.btn.primary{background:var(--brass);border-color:var(--brass);color:var(--night)}
+.btn.primary:hover{box-shadow:0 8px 24px color-mix(in srgb,var(--brass) 45%,transparent)}
+.btn.dark{background:var(--text);color:var(--bg);border-color:var(--text)}
+.sec{padding:34px 0}
+.secHead{display:flex;align-items:baseline;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.secHead .num{font-family:"Space Grotesk";font-weight:700;font-size:13px;color:var(--brassD);letter-spacing:.2em;direction:ltr}
+:root[data-theme=dark] .secHead .num{color:var(--champ)}
+.secHead h2{font-family:"Reem Kufi";font-weight:700;font-size:26px}
+.secHead p{color:var(--muted);font-size:13px;width:100%}
+.grid{display:grid;gap:14px}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-3px);border-color:var(--line2);box-shadow:0 14px 34px rgba(0,0,0,.10)}
+.asset{padding:0;overflow:hidden}
+.asset .view{min-height:240px;display:flex;align-items:center;justify-content:center;padding:30px 24px;position:relative}
+.asset .view.clear{background:repeating-conic-gradient(rgba(128,128,128,.14) 0 25%,transparent 0 50%) 0 0/22px 22px,#EFEAE0}
+.asset .view.solid-light{background:#FFFFFF}
+.asset .view.solid-dark{background:#0C0C10}
+.asset .view svg{width:100%;max-width:460px;height:auto;overflow:visible}
+.asset .view.icon svg{max-width:170px}
+.asset .meta{padding:14px 18px;border-top:1px solid var(--line)}
+.asset .meta b{font-family:"Reem Kufi";font-size:15px;display:block}
+.asset .meta small{color:var(--muted);font-size:11px;display:block;margin-bottom:10px}
+.asset .btnRow{margin-top:0}
+.asset .btn{min-width:70px;padding:9px 8px;font-size:11.5px}
+.pal{cursor:pointer}
+.pal .chipc{height:64px;border-radius:14px;margin-bottom:12px;border:1px solid rgba(0,0,0,.08);position:relative}
+.pal .chipc::after{content:"نسخ ⧉";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;background:rgba(12,12,16,.45);opacity:0;transition:.2s;border-radius:14px}
+.pal:hover .chipc::after{opacity:1}
+.pal b{font-family:"Reem Kufi";font-size:15px;display:block}
+.pal code{font-family:"Space Grotesk";font-size:11.5px;color:var(--muted);direction:ltr;display:inline-block}
+footer{border-top:1px solid var(--line);margin-top:30px;padding:26px 0 40px;text-align:center;color:var(--muted);font-size:12.5px}
+footer b{font-family:"Space Grotesk";letter-spacing:.25em;direction:ltr;display:inline-block;color:var(--brassD)}
+:root[data-theme=dark] footer b{color:var(--brass)}
+#toasts{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:80;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none}
+.toast{background:var(--text);color:var(--bg);font-size:13px;font-weight:600;padding:10px 20px;border-radius:99px;box-shadow:0 12px 30px rgba(0,0,0,.3);display:flex;gap:8px;align-items:center;animation:tin .3s both}
+.toast .dot{width:8px;height:8px;border-radius:50%;background:var(--success)}
+.toast.warn .dot{background:var(--warn)}
+@keyframes tin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.rise{animation:up .7s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d,0s)}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(max-width:1020px){
+  .studio{grid-template-columns:1fr}
+  .panel{position:static;max-height:none}
+  .g4{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .g2{grid-template-columns:1fr}
+  .navLinks{display:none}
+  .stage{min-height:300px;padding:34px 18px}
+  header{padding-top:calc(var(--navH) + 24px)}
+}
+</style>
+</head>
+<body>
+
+<svg id="msvg" aria-hidden="true" style="position:absolute;left:-9999px;top:0;width:10px;height:10px;visibility:hidden" xmlns="http://www.w3.org/2000/svg"></svg>
+
+<nav>
+  <a class="navBrand" href="#studio" aria-label="أماكن جو">
+    <span id="navMark"></span>
+    <span class="t"><b>أماكن جو</b><span>AMAKIN JO</span></span>
+  </a>
+  <div class="navLinks" id="navLinks">
+    <a href="#studio" class="active">المعاينة</a>
+    <a href="#assets">الأصول الأربعة</a>
+    <a href="#colors">الألوان</a>
+  </div>
+  <div class="navActs">
+    <button class="iconBtn" id="btnCopyNav" title="نسخ SVG للمعاينة الحالية">⧉ نسخ</button>
+    <button class="iconBtn" id="btnTheme" aria-label="تبديل ثيم الصفحة">◐ تلقائي</button>
+  </div>
+</nav>
+
+<header class="wrap">
+  <span class="eyebrow rise" style="--d:.05s">✦ الاسم كامل دائمًا · مسافة قابلة للضبط · توهج من ٠ إلى متوهج · بلا نهر</span>
+  <h1 class="rise" style="--d:.12s">أماكن <em>جو</em> — اللوغو والأيقونات جاهزة للتنزيل</h1>
+  <p class="rise" style="--d:.2s">اللوغو فقط — البلاطة والاسم بدون خلفية كاملة. أربعة أصول: لوغو عادي، لوغو دارك، أيقونة عاجية، أيقونة فحمية — كلها SVG و PNG بدقة عالية وشفافية افتراضية. الخريطة داخل البلاطة: شوارع فقط، شوارع وبلوكات، أو مع دواوير. والتوهج الناعم حول البلاطة والكتابة تتحكم فيه من صفر إلى متوهج.</p>
+</header>
+
+<main class="wrap">
+
+<!-- ================= STUDIO ================= -->
+<section id="studio" class="studio">
+  <div class="stageCol rise" style="--d:.28s">
+    <div class="stage v-dark clear" id="stage">
+      <span class="stageTag">LIVE PREVIEW</span>
+      <div class="orb o1"></div><div class="orb o2"></div>
+      <div id="stageLogo"></div>
+    </div>
+    <div class="proof">
+      <span class="cap">الأيقونة بكل المقاسات — النسخة المعروضة حاليًا</span>
+      <div class="p" id="pf128"></div>
+      <div class="p" id="pf64"></div>
+      <div class="p" id="pf40"></div>
+      <div class="p" id="pf24"></div>
+      <div class="p" id="pfAvatar"></div>
+    </div>
+  </div>
+
+  <aside class="panel rise" style="--d:.36s" aria-label="أدوات التحكم">
+    <h3>المعاينة والتصدير</h3>
+    <div class="ctl"><label>نسخة المعاينة</label>
+      <div class="seg" id="segVariant">
+        <button data-v="light">☀️ عادي</button>
+        <button data-v="dark" class="on">🌙 دارك</button>
+      </div>
+    </div>
+    <div class="ctl"><label>خلفية ملفات التنزيل</label>
+      <div class="seg" id="segBg">
+        <button data-v="clear" class="on">شفافة</button>
+        <button data-v="solid">صلبة</button>
+      </div>
+    </div>
+    <div class="note">«شفافة» = اللوغو فقط بدون خلفية. «صلبة» = بيضاء للعادي وسوداء للدارك.</div>
+
+    <h3>البلاطة والنجمة</h3>
+    <div class="ctl"><label>حجم النجمة <output id="vStarR">27</output></label>
+      <input type="range" id="rngStarR" min="18" max="34" value="27"></div>
+    <div class="ctl"><label>استدارة البلاطة <output id="vRadius">24</output></label>
+      <input type="range" id="rngRadius" min="8" max="48" value="24"></div>
+    <div class="ctl"><label>سماكة الإطار الذهبي <output id="vFrameW">3.2</output></label>
+      <input type="range" id="rngFrameW" min="1" max="6" step="0.2" value="3.2"></div>
+
+    <h3>الخريطة داخل البلاطة</h3>
+    <div class="ctl"><label>نمط الخريطة</label>
+      <div class="seg" id="segMap">
+        <button data-v="streets">شوارع فقط</button>
+        <button data-v="round" class="on">شوارع وبلوكات ودواوير</button>
+        <button data-v="blocks">شوارع وبلوكات</button>
+        <button data-v="none">بدون</button>
+      </div>
+    </div>
+    <div class="ctl" id="ctlDensity"><label>كثافة الشوارع <output id="vDensity">5</output></label>
+      <input type="range" id="rngDensity" min="1" max="10" value="5"></div>
+    <div class="ctl" id="ctlMapOp"><label>وضوح الخريطة <output id="vMapOp">65%</output></label>
+      <input type="range" id="rngMapOp" min="0" max="100" value="65"></div>
+
+    <h3>الاسم</h3>
+    <div class="ctl"><label>حجم الاسم <output id="vScale">1.00×</output></label>
+      <input type="range" id="rngScale" min="0.7" max="1.4" step="0.05" value="1"></div>
+    <div class="ctl"><label>المسافة بين الاسم والبلاطة <output id="vGap">22</output></label>
+      <input type="range" id="rngGap" min="8" max="60" value="22"></div>
+    <div class="ctl"><label>تباعد أحرف AMAKIN <output id="vTracking">0.30em</output></label>
+      <input type="range" id="rngTracking" min="10" max="60" value="30"></div>
+
+    <h3>الذهب والتوهج</h3>
+    <div class="ctl"><label>لون الذهب</label>
+      <div class="colorRow">
+        <input type="color" id="colGold" value="#C9A24B"><span class="hex" id="hexGold">#C9A24B</span>
+        <div class="sws" id="swGold">
+          <button data-c="#C9A24B" style="background:#C9A24B" title="نحاسي"></button>
+          <button data-c="#D4AF37" style="background:#D4AF37" title="ذهبي"></button>
+          <button data-c="#A8802F" style="background:#A8802F" title="برونزي"></button>
+          <button data-c="#B08D57" style="background:#B08D57" title="ذهبي وردي"></button>
+        </div>
+      </div>
+    </div>
+    <div class="tglRow"><span>تدرّج معدني للذهب</span><span class="tgl"><input type="checkbox" id="tglGrad" checked><i></i></span></div>
+    <div class="ctl"><label>توهج ناعم حول البلاطة والكتابة <output id="vGlow">30%</output></label>
+      <input type="range" id="rngGlow" min="0" max="100" value="30"></div>
+
+    <h3>إجراءات</h3>
+    <div class="btnRow">
+      <button class="btn" id="btnReset">↺ إعادة الضبط</button>
+      <button class="btn" id="btnRandom">✦ عشوائي</button>
+    </div>
+    <div class="btnRow">
+      <button class="btn primary" id="btnAllSvg">↓ كل SVG (4)</button>
+      <button class="btn dark" id="btnAllPng">↓ كل PNG (4)</button>
+    </div>
+  </aside>
+</section>
+
+<!-- ================= ASSETS ================= -->
+<section id="assets" class="sec reveal">
+  <div class="secHead"><span class="num">01</span><h2>الأصول الأربعة — تنزيل مباشر</h2>
+    <p>لوغو عادي · لوغو دارك · أيقونة عاجية · أيقونة فحمية. PNG للّوغو بدقة ×4 وللأيقونة 1024×1024. الاسم كامل غير مقصوص، والمسافة والتوهج كما ضبطتهما بالضبط.</p></div>
+  <div class="grid g2">
+    <div class="card asset"><div class="view clear" id="viewLockLight"></div>
+      <div class="meta"><b>لوغو الوضع العادي</b><small>أماكن فحمية · جو وAMAKIN JO ذهبية · بلاطة عاجية</small>
+        <div class="btnRow"><button class="btn primary" data-dl="png" data-a="lockLight">↓ PNG</button><button class="btn" data-dl="svg" data-a="lockLight">↓ SVG</button><button class="btn" data-copy="lockLight">⧉ نسخ</button></div>
+      </div></div>
+    <div class="card asset"><div class="view clear" id="viewLockDark"></div>
+      <div class="meta"><b>لوغو الوضع الداكن</b><small>أماكن عاجية · جو وAMAKIN JO ذهبية · بلاطة فحمية</small>
+        <div class="btnRow"><button class="btn primary" data-dl="png" data-a="lockDark">↓ PNG</button><button class="btn" data-dl="svg" data-a="lockDark">↓ SVG</button><button class="btn" data-copy="lockDark">⧉ نسخ</button></div>
+      </div></div>
+    <div class="card asset"><div class="view icon clear" id="viewIconLight"></div>
+      <div class="meta"><b>أيقونة التطبيق — عاجية</b><small>App Store / Play Store · 1024×1024</small>
+        <div class="btnRow"><button class="btn primary" data-dl="png" data-a="iconLight">↓ PNG</button><button class="btn" data-dl="svg" data-a="iconLight">↓ SVG</button><button class="btn" data-copy="iconLight">⧉ نسخ</button></div>
+      </div></div>
+    <div class="card asset"><div class="view icon clear" id="viewIconDark"></div>
+      <div class="meta"><b>أيقونة التطبيق — فحمية</b><small>النسخة الليلية · iOS Dark / Android Themed · 1024×1024</small>
+        <div class="btnRow"><button class="btn primary" data-dl="png" data-a="iconDark">↓ PNG</button><button class="btn" data-dl="svg" data-a="iconDark">↓ SVG</button><button class="btn" data-copy="iconDark">⧉ نسخ</button></div>
+      </div></div>
+  </div>
+</section>
+
+<!-- ================= COLORS ================= -->
+<section id="colors" class="sec reveal">
+  <div class="secHead"><span class="num">02</span><h2>ألوان الهوية المعتمدة</h2>
+    <p>انقر أي بطاقة لنسخ قيمتها. الذهب للنجمة والإطار و«جو» وAMAKIN JO والتوهج — الفحمي والعاجي للنص والبلاطة حسب الثيم.</p></div>
+  <div class="grid g4" id="palGrid"></div>
+</section>
+
+</main>
+
+<footer>
+  <b>AMAKIN JO</b> · أماكن جو — صُنع في عمّان ✦ اكتشف جوّك
+</footer>
+
+<div id="toasts"></div>
+
+<script>
+"use strict";
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const SVGNS="http://www.w3.org/2000/svg";
+/* ================= constants & state ================= */
+const AR="أماكن جو", EN="AMAKIN JO";
+const AR_BASE=42, EN_BASE=20, TILE=120, PAD=16;
+const GEO={starR:27,radius:24,frameW:3.2,map:"round",density:5,mapOp:65,scale:1,gap:22,tracking:30,gold:"#C9A24B",grad:true,glow:30};
+const state={...GEO,variant:"dark",bg:"clear"};
+const VARIANTS={
+  light:{tile:"#F8F4EA",word:"#26262B",bg:"#FFFFFF",dark:false},
+  dark:{tile:"#141419",word:"#F5F0E6",bg:"#0C0C10",dark:true}
+};
+const ASSETS={
+  lockLight:{variant:"light",kind:"lock",file:"amakin-jo-logo-light"},
+  lockDark:{variant:"dark",kind:"lock",file:"amakin-jo-logo-dark"},
+  iconLight:{variant:"light",kind:"icon",file:"amakin-jo-icon-light"},
+  iconDark:{variant:"dark",kind:"icon",file:"amakin-jo-icon-dark"}
+};
+/* ================= color math ================= */
+function hex2rgb(h){h=h.replace("#","");if(h.length===3)h=h.split("").map(c=>c+c).join("");const n=parseInt(h,16);return[(n>>16)&255,(n>>8)&255,n&255];}
+function mix(a,b,t){const A=hex2rgb(a),B=hex2rgb(b);return "#"+A.map((v,i)=>Math.round(v+(B[i]-v)*t).toString(16).padStart(2,"0")).join("");}
+function rgba(h,a){const[r,g,b]=hex2rgb(h);return `rgba(${r},${g},${b},${a})`;}
+function goldSet(v){
+  const base=v.dark?state.gold:mix(state.gold,"#000000",0.10);
+  return {base,champ:mix(base,"#FFFFFF",0.45),deep:mix(base,"#000000",0.28)};
+}
+function tones(v){
+  const k=state.mapOp/100;
+  return {
+    lines:mix(v.tile,v.dark?"#FFFFFF":"#8A7B57",(v.dark?0.05:0.06)+(v.dark?0.20:0.30)*k),
+    blocks:mix(v.tile,v.dark?"#000000":"#8A7B57",(v.dark?0.35:0.30)*k),
+    paper:mix(v.tile,"#FFFFFF",v.dark?0.03+0.08*k:0.15+0.45*k)
+  };
+}
+const glowBlur=()=>2+state.glow*0.12;
+const glowOp=()=>state.glow/100*0.9;
+/* ================= geometry ================= */
+function starD(cx,cy,R){
+  const r=R*0.48,p=[];
+  for(let k=0;k<7;k++){
+    const aO=(-90+k*360/7)*Math.PI/180,aI=(-90+(k+.5)*360/7)*Math.PI/180;
+    p.push([cx+R*Math.cos(aO),cy+R*Math.sin(aO)],[cx+r*Math.cos(aI),cy+r*Math.sin(aI)]);
+  }
+  return "M"+p.map(q=>q[0].toFixed(2)+" "+q[1].toFixed(2)).join("L")+"Z";
+}
+const srnd=i=>{const x=Math.sin(i*127.1+311.7)*43758.5453;return x-Math.floor(x);};
+/* خريطة مبسّطة: شبكة شوارع حقيقية + شارع رئيسي + جادة قطرية + دوّار */
+function mapData(){
+  const n=Math.max(3,Math.min(7,3+Math.round(state.density*0.4)));
+  const xs=[-6],ys=[-6];
+  for(let i=1;i<n;i++){
+    xs.push(i*100/n+(srnd(i*13+4)-0.5)*6);
+    ys.push(i*100/n+(srnd(i*29+7)-0.5)*6);
+  }
+  xs.push(106);ys.push(106);
+  const gap=3.2,blocks=[];
+  let s=101;
+  for(let j=0;j<n;j++){
+    for(let i=0;i<n;i++){
+      let i2=i;
+      if(i<n-1&&srnd(s++)<0.22)i2=i+1;
+      const x0=Math.max(xs[i]+gap/2,-4),x1=Math.min(xs[i2+1]-gap/2,104);
+      const y0=Math.max(ys[j]+gap/2,-4),y1=Math.min(ys[j+1]-gap/2,104);
+      if(x1-x0>2&&y1-y0>2)blocks.push([x0,y0,x1-x0,y1-y0]);
+      i=i2;
+    }
+  }
+  let minor="";
+  for(let i=1;i<n;i++)minor+=`M${xs[i].toFixed(1)} -6V106M-6 ${ys[i].toFixed(1)}H106`;
+  const mx=xs[Math.max(1,Math.round((n-1)*0.68))],my=ys[Math.max(1,Math.round((n-1)*0.36))];
+  const main=`M${mx.toFixed(1)} -6V106M-6 ${my.toFixed(1)}H106`;
+  const avenue="M-8 96Q28 68 55 47T108 10";
+  return {blocks,minor,main,avenue,roundabout:{cx:mx,cy:my,r:6.4}};
+}
+/* ================= exact text measurement via real SVG layout ================= */
+const msvg=$("#msvg"), mCtx=document.createElement("canvas").getContext("2d");
+const advCache=new Map();
+function advance(str,family,weight,size,lsEm){
+  const key=`${family}|${weight}|${size}|${lsEm}|${str}`;
+  if(advCache.has(key))return advCache.get(key);
+  let w=0;
+  try{
+    const t=document.createElementNS(SVGNS,"text");
+    t.setAttribute("font-family",family+", sans-serif");
+    t.setAttribute("font-weight",weight);
+    t.setAttribute("font-size",size);
+    if(lsEm)t.setAttribute("letter-spacing",lsEm+"em");
+    t.textContent=str;
+    msvg.appendChild(t);
+    w=t.getComputedTextLength();
+    msvg.removeChild(t);
+  }catch(e){w=0;}
+  if(!w||!isFinite(w)){
+    mCtx.font=`${weight} ${size}px ${family}, sans-serif`;
+    w=mCtx.measureText(str).width+(lsEm?lsEm*size*(str.length-1):0);
+  }
+  advCache.set(key,w);
+  return w;
+}
+const arFs=()=>AR_BASE*state.scale, enFs=()=>EN_BASE*state.scale;
+const arFont=()=>`700 ${arFs()}px "Reem Kufi", sans-serif`;
+const enFont=()=>`700 ${enFs()}px "Space Grotesk", sans-serif`;
+function layout(){
+  const s=state.scale;
+  const arW=advance(AR,"Reem Kufi",700,arFs(),0)+6;
+  const enW=advance(EN,"Space Grotesk",700,enFs(),state.tracking/100)+10;
+  const tw=Math.max(arW,enW);
+  const blockH=96*s, H=Math.max(TILE,blockH)+PAD*2;
+  const W=PAD+tw+state.gap+TILE+PAD;
+  const textTop=(H-blockH)/2;
+  const tileX=W-PAD-TILE;
+  /* النص محاذى لليمين (جهة البلاطة) — text.x هو الحد الأيمن للنص */
+  return {W,H,arW,enW,trPx:state.tracking/100*enFs(),
+    tile:{x:tileX,y:(H-TILE)/2,size:TILE},
+    text:{x:tileX-state.gap,arY:textTop+48*s,enY:textTop+90*s}};
+}
+/* ================= tile SVG ================= */
+function tileDefs(v,p){
+  const G=goldSet(v);
+  return `<defs>
+    <linearGradient id="${p}g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${G.champ}"/><stop offset=".5" stop-color="${G.base}"/><stop offset="1" stop-color="${G.deep}"/></linearGradient>
+    <clipPath id="${p}c"><rect width="100" height="100" rx="${state.radius}"/></clipPath>
+    <filter id="${p}gl" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur in="SourceAlpha" stdDeviation="${glowBlur().toFixed(1)}" result="b"/><feFlood flood-color="${G.base}" flood-opacity="${glowOp().toFixed(2)}"/><feComposite in2="b" operator="in" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>`;
+}
+function mapSVG(v,p){
+  const T=tones(v);let map="";
+  if(state.mapOp<=0||state.map==="none")return map;
+  const M=mapData();
+  if(state.map==="streets"){
+    map+=`<path d="${M.minor}" stroke="${T.lines}" stroke-width="1.2" fill="none" stroke-linecap="round"/>`;
+    map+=`<path d="${M.main}" stroke="${T.lines}" stroke-width="2.8" fill="none" stroke-linecap="round"/>`;
+    map+=`<path d="${M.avenue}" stroke="${T.lines}" stroke-width="4.2" fill="none" stroke-linecap="round"/>`;
+    return map;
+  }
+  map+=M.blocks.map(r=>`<rect x="${r[0].toFixed(1)}" y="${r[1].toFixed(1)}" width="${r[2].toFixed(1)}" height="${r[3].toFixed(1)}" rx="1" fill="${T.blocks}"/>`).join("");
+  map+=`<path d="${M.main}" stroke="${T.lines}" stroke-opacity=".55" stroke-width="7.6" fill="none"/>`;
+  map+=`<path d="${M.main}" stroke="${T.paper}" stroke-width="4.6" fill="none"/>`;
+  map+=`<path d="${M.avenue}" stroke="${T.lines}" stroke-opacity=".55" stroke-width="9.4" fill="none" stroke-linecap="round"/>`;
+  map+=`<path d="${M.avenue}" stroke="${T.paper}" stroke-width="6" fill="none" stroke-linecap="round"/>`;
+  if(state.map==="round"){
+    const R=M.roundabout;
+    map+=`<circle cx="${R.cx}" cy="${R.cy}" r="${R.r}" fill="${T.paper}" stroke="${T.lines}" stroke-width="1.3"/>`;
+    map+=`<circle cx="${R.cx}" cy="${R.cy}" r="${(R.r*0.38).toFixed(1)}" fill="${T.blocks}"/>`;
+  }
+  return map;
+}
+function tileBody(v,p){
+  const G=goldSet(v),T=tones(v);
+  const gold=state.grad?`url(#${p}g)`:G.base;
+  const base=(state.map==="blocks"||state.map==="round")?T.paper:v.tile;
+  const fw=state.frameW,fr=Math.max(2,state.radius-fw/2);
+  let s=`<rect width="100" height="100" rx="${state.radius}" fill="${base}"/>`;
+  s+=`<g clip-path="url(#${p}c)">${mapSVG(v,p)}</g>`;
+  s+=`<rect x="${fw/2}" y="${fw/2}" width="${100-fw}" height="${100-fw}" rx="${fr}" fill="none" stroke="${gold}" stroke-width="${fw}"/>`;
+  s+=`<path d="${starD(50,50,state.starR)}" fill="${gold}" stroke="${G.deep}" stroke-width="0.7" stroke-linejoin="round"/>`;
+  return s;
+}
+function tileSVG(v,p,x,y,size){
+  const gl=state.glow>0?` filter="url(#${p}gl)"`:"";
+  return tileDefs(v,p)+`<g transform="translate(${x},${y}) scale(${size/100})"${gl}>${tileBody(v,p)}</g>`;
+}
+function iconSVG(v,p,size){
+  return `<svg width="${size}" height="${size}" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">${tileSVG(v,p,0,0,100)}</svg>`;
+}
+/* ================= tile Canvas ================= */
+function rr(ctx,x,y,w,h,r){
+  r=Math.min(r,w/2,h/2);
+  ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);
+  ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();
+}
+function paintMap(ctx,v){
+  const T=tones(v);
+  if(state.mapOp<=0||state.map==="none")return;
+  const M=mapData();
+  if(state.map==="streets"){
+    ctx.strokeStyle=T.lines;ctx.lineCap="round";
+    ctx.lineWidth=1.2;ctx.stroke(new Path2D(M.minor));
+    ctx.lineWidth=2.8;ctx.stroke(new Path2D(M.main));
+    ctx.lineWidth=4.2;ctx.stroke(new Path2D(M.avenue));
+    return;
+  }
+  ctx.fillStyle=T.blocks;
+  M.blocks.forEach(r=>{rr(ctx,r[0],r[1],r[2],r[3],1);ctx.fill();});
+  ctx.lineCap="round";
+  ctx.strokeStyle=T.lines;ctx.globalAlpha=.55;ctx.lineWidth=7.6;ctx.stroke(new Path2D(M.main));
+  ctx.globalAlpha=1;ctx.strokeStyle=T.paper;ctx.lineWidth=4.6;ctx.stroke(new Path2D(M.main));
+  ctx.strokeStyle=T.lines;ctx.globalAlpha=.55;ctx.lineWidth=9.4;ctx.stroke(new Path2D(M.avenue));
+  ctx.globalAlpha=1;ctx.strokeStyle=T.paper;ctx.lineWidth=6;ctx.stroke(new Path2D(M.avenue));
+  if(state.map==="round"){
+    const R=M.roundabout;
+    ctx.fillStyle=T.paper;ctx.beginPath();ctx.arc(R.cx,R.cy,R.r,0,7);ctx.fill();
+    ctx.strokeStyle=T.lines;ctx.lineWidth=1.3;ctx.stroke();
+    ctx.fillStyle=T.blocks;ctx.beginPath();ctx.arc(R.cx,R.cy,R.r*0.38,0,7);ctx.fill();
+  }
+}
+function paintTile(ctx,v,x,y,size,devScale){
+  const G=goldSet(v),T=tones(v);
+  const grad=ctx.createLinearGradient(0,0,100,100);
+  grad.addColorStop(0,G.champ);grad.addColorStop(.5,G.base);grad.addColorStop(1,G.deep);
+  const gold=state.grad?grad:G.base;
+  const base=(state.map==="blocks"||state.map==="round")?T.paper:v.tile;
+  ctx.save();ctx.translate(x,y);ctx.scale(size/100,size/100);
+  if(state.glow>0){
+    ctx.save();ctx.shadowColor=rgba(G.base,glowOp());ctx.shadowBlur=glowBlur()*devScale*(size/100);
+    rr(ctx,0,0,100,100,state.radius);ctx.fillStyle=base;ctx.fill();ctx.fill();ctx.restore();
+  }
+  rr(ctx,0,0,100,100,state.radius);ctx.fillStyle=base;ctx.fill();
+  ctx.save();rr(ctx,0,0,100,100,state.radius);ctx.clip();paintMap(ctx,v);ctx.restore();
+  const fw=state.frameW;
+  rr(ctx,fw/2,fw/2,100-fw,100-fw,Math.max(2,state.radius-fw/2));
+  ctx.strokeStyle=gold;ctx.lineWidth=fw;ctx.stroke();
+  const P=new Path2D(starD(50,50,state.starR));
+  ctx.fillStyle=gold;ctx.fill(P);
+  ctx.strokeStyle=G.deep;ctx.lineWidth=0.7;ctx.lineJoin="round";ctx.stroke(P);
+  ctx.restore();
+}
+/* ================= lockup & export SVG ================= */
+function lockSVG(v,p){
+  const L=layout(),G=goldSet(v);
+  const gl=state.glow>0?` filter="url(#${p}tgl)"`:"";
+  let inner=tileSVG(v,p,L.tile.x,L.tile.y,L.tile.size);
+  if(state.glow>0)inner+=`<defs><filter id="${p}tgl" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur in="SourceAlpha" stdDeviation="${(glowBlur()*0.8).toFixed(1)}" result="b"/><feFlood flood-color="${G.base}" flood-opacity="${glowOp().toFixed(2)}"/><feComposite in2="b" operator="in" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>`;
+  inner+=`<g${gl}>`;
+  inner+=`<text x="${L.text.x.toFixed(1)}" y="${L.text.arY.toFixed(1)}" direction="rtl" text-anchor="start" font-family="Reem Kufi, sans-serif" font-weight="700" font-size="${arFs()}" fill="${v.word}">أماكن <tspan fill="${G.base}">جو</tspan></text>`;
+  inner+=`<text x="${L.text.x.toFixed(1)}" y="${L.text.enY.toFixed(1)}" direction="ltr" text-anchor="end" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="${enFs()}" letter-spacing="${(state.tracking/100).toFixed(2)}em" fill="${G.base}">AMAKIN JO</text>`;
+  inner+=`</g>`;
+  return {W:L.W,H:L.H,inner,L};
+}
+function assetSVG(key){
+  const A=ASSETS[key],v=VARIANTS[A.variant];
+  let W,H,inner;
+  if(A.kind==="icon"){W=100;H=100;inner=tileSVG(v,"ex",0,0,100);}
+  else{const L=lockSVG(v,"ex");W=L.W;H=L.H;inner=L.inner;}
+  const bg=state.bg==="solid"?`<rect width="${W.toFixed(1)}" height="${H.toFixed(1)}" fill="${v.bg}"/>`:"";
+  const px=A.kind==="icon"?1024:Math.round(W*4), py=A.kind==="icon"?1024:Math.round(H*4);
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W.toFixed(1)} ${H.toFixed(1)}" width="${px}" height="${py}"><style>@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Reem+Kufi:wght@700&amp;display=swap');</style>${bg}${inner}</svg>`;
+}
+/* ================= render ================= */
+let rafPending=false;
+function render(){if(rafPending)return;rafPending=true;requestAnimationFrame(()=>{rafPending=false;doRender();});}
+function doRender(){
+  const v=VARIANTS[state.variant],L=lockSVG(v,"st");
+  const stageW=Math.min(720,L.W*1.6);
+  $("#stageLogo").innerHTML=`<svg class="stage-svg" style="width:${stageW.toFixed(0)}px" viewBox="0 0 ${L.W.toFixed(1)} ${L.H.toFixed(1)}" xmlns="http://www.w3.org/2000/svg">${L.inner}</svg>`;
+  $("#stage").className=`stage v-${state.variant} ${state.bg==="solid"?"solid":"clear"}`;
+  [["#pf128",128,"128px"],["#pf64",64,"64px"],["#pf40",40,"40px"],["#pf24",24,"24px"]].forEach(([id,s,lbl],i)=>{
+    $(id).innerHTML=iconSVG(v,"pf"+i,s)+`<small>${lbl}</small>`;
+  });
+  $("#pfAvatar").innerHTML=`<svg class="avatarProof" width="64" height="64" viewBox="0 0 100 100"><defs><clipPath id="avc"><circle cx="50" cy="50" r="50"/></clipPath></defs><g clip-path="url(#avc)">${tileSVG(v,"av",0,0,100)}</g></svg><small>أفاتار</small>`;
+  $("#navMark").innerHTML=iconSVG(VARIANTS.dark,"nv",36);
+  const vl=lockSVG(VARIANTS.light,"al"),vd=lockSVG(VARIANTS.dark,"ad");
+  $("#viewLockLight").className="view "+(state.bg==="solid"?"solid-light":"clear");
+  $("#viewLockLight").innerHTML=`<svg viewBox="0 0 ${vl.W.toFixed(1)} ${vl.H.toFixed(1)}">${vl.inner}</svg>`;
+  $("#viewLockDark").className="view "+(state.bg==="solid"?"solid-dark":"clear");
+  $("#viewLockDark").innerHTML=`<svg viewBox="0 0 ${vd.W.toFixed(1)} ${vd.H.toFixed(1)}">${vd.inner}</svg>`;
+  $("#viewIconLight").className="view icon "+(state.bg==="solid"?"solid-light":"clear");
+  $("#viewIconLight").innerHTML=iconSVG(VARIANTS.light,"il",170);
+  $("#viewIconDark").className="view icon "+(state.bg==="solid"?"solid-dark":"clear");
+  $("#viewIconDark").innerHTML=iconSVG(VARIANTS.dark,"id",170);
+  $("#hexGold").textContent=state.gold.toUpperCase();
+}
+/* ================= palette ================= */
+const PALS=[
+  ["ذهبي نحاسي","#C9A24B","النجمة والإطار وجو وAMAKIN JO والتوهج"],["ذهبي فاتح","#E9CF8B","بداية التدرج المعدني"],
+  ["برونزي عميق","#9A742B","نهاية التدرج والحدود"],["فحمي","#141419","بلاطة الدارك · نص العادي"],
+  ["عاجي","#F5F0E6","نص الدارك"],["كريمي","#F8F4EA","بلاطة العادي"],
+  ["قرمزي","#C8102E","علم الأردن · تنبيهات فقط"],["زمردي","#0F7A55","علم الأردن · نجاح فقط"]
+];
+$("#palGrid").innerHTML=PALS.map(([n,h,r])=>`<div class="card pal" data-hex="${h}"><div class="chipc" style="background:${h}"></div><b>${n}</b><code>${h}</code><small style="display:block;font-size:11px;color:var(--muted)">${r}</small></div>`).join("");
+$("#palGrid").addEventListener("click",e=>{
+  const c=e.target.closest(".pal");if(!c)return;
+  copyText(c.dataset.hex,"تم نسخ اللون "+c.dataset.hex);
+});
+/* ================= controls ================= */
+function setRange(id,val){const el=$(id);el.value=val;el.style.setProperty("--p",((val-el.min)/(el.max-el.min)*100)+"%");}
+function syncControls(){
+  [["#segVariant",state.variant],["#segBg",state.bg],["#segMap",state.map]].forEach(([id,v])=>{
+    $$(id+" button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));
+  });
+  setRange("#rngStarR",state.starR);$("#vStarR").textContent=Math.round(state.starR);
+  setRange("#rngRadius",state.radius);$("#vRadius").textContent=Math.round(state.radius);
+  setRange("#rngFrameW",state.frameW);$("#vFrameW").textContent=(+state.frameW).toFixed(1);
+  setRange("#rngDensity",state.density);$("#vDensity").textContent=state.density;
+  setRange("#rngMapOp",state.mapOp);$("#vMapOp").textContent=Math.round(state.mapOp)+"%";
+  setRange("#rngScale",state.scale);$("#vScale").textContent=(+state.scale).toFixed(2)+"×";
+  setRange("#rngGap",state.gap);$("#vGap").textContent=Math.round(state.gap);
+  setRange("#rngTracking",state.tracking);$("#vTracking").textContent=(state.tracking/100).toFixed(2)+"em";
+  setRange("#rngGlow",state.glow);$("#vGlow").textContent=state.glow<=0?"٠":Math.round(state.glow)+"%";
+  $("#colGold").value=state.gold;
+  $("#tglGrad").checked=state.grad;
+  $("#ctlDensity").classList.toggle("dim",state.map==="none");
+  $("#ctlMapOp").classList.toggle("dim",state.map==="none");
+}
+function bindSeg(id,key){$(id).addEventListener("click",e=>{
+  const b=e.target.closest("button");if(!b)return;
+  state[key]=b.dataset.v;syncControls();render();
+});}
+bindSeg("#segVariant","variant");bindSeg("#segBg","bg");bindSeg("#segMap","map");
+[["#rngStarR","starR","#vStarR",v=>Math.round(v)],["#rngRadius","radius","#vRadius",v=>Math.round(v)],
+ ["#rngFrameW","frameW","#vFrameW",v=>(+v).toFixed(1)],["#rngDensity","density","#vDensity",v=>v],
+ ["#rngMapOp","mapOp","#vMapOp",v=>Math.round(v)+"%"],["#rngScale","scale","#vScale",v=>(+v).toFixed(2)+"×"],
+ ["#rngGap","gap","#vGap",v=>Math.round(v)],["#rngTracking","tracking","#vTracking",v=>(v/100).toFixed(2)+"em"],
+ ["#rngGlow","glow","#vGlow",v=>v<=0?"٠":Math.round(v)+"%"]
+].forEach(([id,key,out,fmt])=>{
+  $(id).addEventListener("input",e=>{
+    state[key]=+e.target.value;
+    e.target.style.setProperty("--p",((e.target.value-e.target.min)/(e.target.max-e.target.min)*100)+"%");
+    $(out).textContent=fmt(state[key]);render();
+  });
+});
+$("#colGold").addEventListener("input",e=>{state.gold=e.target.value;render();});
+$("#swGold").addEventListener("click",e=>{
+  const b=e.target.closest("button");if(!b)return;
+  state.gold=b.dataset.c;$("#colGold").value=b.dataset.c;render();
+});
+$("#tglGrad").addEventListener("change",e=>{state.grad=e.target.checked;render();});
+$("#btnReset").addEventListener("click",()=>{
+  Object.assign(state,GEO);advCache.clear();syncControls();render();toast("تمت إعادة الضبط إلى التصميم المعتمد");
+});
+$("#btnRandom").addEventListener("click",()=>{
+  const pick=a=>a[Math.floor(Math.random()*a.length)];
+  state.gold=pick(["#C9A24B","#D4AF37","#A8802F","#B08D57"]);
+  state.map=pick(["round","round","blocks","streets"]);
+  state.starR=22+Math.round(Math.random()*10);
+  state.radius=14+Math.round(Math.random()*26);
+  state.frameW=+(2+Math.random()*2.6).toFixed(1);
+  state.density=3+Math.round(Math.random()*5);
+  state.mapOp=45+Math.round(Math.random()*30);
+  state.scale=+(0.85+Math.random()*0.35).toFixed(2);
+  state.gap=12+Math.round(Math.random()*28);
+  state.tracking=18+Math.round(Math.random()*28);
+  state.glow=Math.round(Math.random()*70);
+  state.grad=Math.random()<0.85;
+  syncControls();render();toast("✦ تركيبة عشوائية جديدة — الأصول الأربعة تحدّثت");
+});
+/* ================= export ================= */
+function toast(msg,warn){
+  const t=document.createElement("div");t.className="toast"+(warn?" warn":"");
+  t.innerHTML=`<span class="dot"></span>${msg}`;
+  $("#toasts").appendChild(t);
+  setTimeout(()=>{t.style.opacity="0";t.style.transition="opacity .4s";setTimeout(()=>t.remove(),420);},2600);
+}
+function copyText(txt,msg){
+  const done=()=>toast(msg);
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(done).catch(()=>fallbackCopy(txt,done));
+  else fallbackCopy(txt,done);
+}
+function fallbackCopy(txt,done){
+  const ta=document.createElement("textarea");ta.value=txt;ta.style.position="fixed";ta.style.opacity="0";
+  document.body.appendChild(ta);ta.select();
+  try{document.execCommand("copy");done();}catch(e){toast("تعذّر النسخ — استخدم تنزيل SVG",true);}
+  ta.remove();
+}
+function download(url,name){const a=document.createElement("a");a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();}
+function dlSVG(key){
+  const blob=new Blob([assetSVG(key)],{type:"image/svg+xml"});
+  const url=URL.createObjectURL(blob);download(url,ASSETS[key].file+".svg");
+  setTimeout(()=>URL.revokeObjectURL(url),4000);
+  toast("تم تنزيل SVG — "+ASSETS[key].file);
+}
+async function ensureFonts(){
+  try{
+    await Promise.all([
+      document.fonts.load('700 42px "Reem Kufi"',AR),
+      document.fonts.load('700 20px "Space Grotesk"',EN)
+    ]);
+    advCache.clear();
+  }catch(e){}
+}
+async function dlPNG(key){
+  await ensureFonts();
+  const A=ASSETS[key],v=VARIANTS[A.variant],G=goldSet(v);
+  let cv,ctx;
+  if(A.kind==="icon"){
+    cv=document.createElement("canvas");cv.width=1024;cv.height=1024;
+    ctx=cv.getContext("2d");const S=10.24;ctx.scale(S,S);
+    if(state.bg==="solid"){ctx.fillStyle=v.bg;ctx.fillRect(0,0,100,100);}
+    paintTile(ctx,v,0,0,100,S);
+  }else{
+    const L=layout(),S=4;
+    cv=document.createElement("canvas");cv.width=Math.round(L.W*S);cv.height=Math.round(L.H*S);
+    ctx=cv.getContext("2d");ctx.scale(S,S);
+    if(state.bg==="solid"){ctx.fillStyle=v.bg;ctx.fillRect(0,0,L.W,L.H);}
+    paintTile(ctx,v,L.tile.x,L.tile.y,L.tile.size,S);
+    ctx.textBaseline="alphabetic";ctx.textAlign="right";
+    const setGlow=on=>{
+      if(on&&state.glow>0){ctx.shadowColor=rgba(G.base,glowOp());ctx.shadowBlur=glowBlur()*0.8*S;ctx.shadowOffsetX=0;ctx.shadowOffsetY=0;}
+      else{ctx.shadowColor="transparent";ctx.shadowBlur=0;}
+    };
+    /* الاسم محاذى لليمين بجانب البلاطة — جو الذهبية في طرف السطر */
+    ctx.direction="rtl";ctx.font=arFont();
+    setGlow(true);
+    ctx.fillStyle=v.word;ctx.fillText(AR,L.text.x,L.text.arY);
+    setGlow(false);
+    ctx.fillStyle=G.base;
+    const arPreW=ctx.measureText("أماكن ").width;
+    ctx.fillText("جو",L.text.x-arPreW,L.text.arY);
+    ctx.direction="ltr";ctx.textAlign="left";ctx.font=enFont();ctx.fillStyle=G.base;
+    const trPx=L.trPx;
+    const enWidth=ctx.measureText(EN).width+trPx*(EN.length-1);
+    let ex=L.text.x-enWidth;
+    setGlow(true);
+    if("letterSpacing" in ctx){
+      ctx.letterSpacing=trPx+"px";
+      ctx.fillText(EN,ex,L.text.enY);
+      ctx.letterSpacing="0px";
+    }else{
+      for(let i=0;i<EN.length;i++){ctx.fillText(EN[i],ex,L.text.enY);ex+=ctx.measureText(EN[i]).width+trPx;}
+    }
+    setGlow(false);
+  }
+  await new Promise(res=>{
+    const save=blob=>{
+      if(!blob)download(cv.toDataURL("image/png"),A.file+".png");
+      else{const url=URL.createObjectURL(blob);download(url,A.file+".png");setTimeout(()=>URL.revokeObjectURL(url),4000);}
+      res();
+    };
+    if(cv.toBlob)cv.toBlob(save,"image/png");else save(null);
+  });
+  toast("تم تنزيل PNG — "+A.file+(A.kind==="icon"?" · 1024×1024":" · دقة ×4"));
+}
+document.addEventListener("click",e=>{
+  const dl=e.target.closest("[data-dl]");
+  if(dl){dl.dataset.dl==="svg"?dlSVG(dl.dataset.a):dlPNG(dl.dataset.a);return;}
+  const cp=e.target.closest("[data-copy]");
+  if(cp){copyText(assetSVG(cp.dataset.copy),"تم نسخ SVG — "+ASSETS[cp.dataset.copy].file);return;}
+});
+$("#btnCopyNav").addEventListener("click",()=>{
+  const key=state.variant==="dark"?"lockDark":"lockLight";
+  copyText(assetSVG(key),"تم نسخ SVG للمعاينة الحالية ⧉");
+});
+$("#btnAllSvg").addEventListener("click",()=>{
+  Object.keys(ASSETS).forEach((k,i)=>setTimeout(()=>dlSVG(k),i*450));
+  toast("بدأ تنزيل 4 ملفات SVG — اسمح بالتنزيلات المتعددة إن سُئلت");
+});
+$("#btnAllPng").addEventListener("click",async()=>{
+  toast("بدأ تنزيل 4 ملفات PNG — اسمح بالتنزيلات المتعددة إن سُئلت");
+  for(const k of Object.keys(ASSETS)){await dlPNG(k);await new Promise(r=>setTimeout(r,450));}
+});
+/* ================= page theme ================= */
+const mq=matchMedia("(prefers-color-scheme: dark)");
+let mode="auto";
+try{mode=localStorage.getItem("amakin-theme")||"auto";}catch(e){}
+function applyTheme(){
+  if(mode==="auto")document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme",mode);
+  $("#btnTheme").textContent=mode==="auto"?"◐ تلقائي":mode==="dark"?"🌙 داكن":"☀️ عادي";
+  try{localStorage.setItem("amakin-theme",mode);}catch(e){}
+  render();
+}
+$("#btnTheme").addEventListener("click",()=>{
+  mode=mode==="auto"?"light":mode==="light"?"dark":"auto";
+  applyTheme();
+  toast("ثيم الصفحة: "+(mode==="auto"?"تلقائي حسب الجهاز":mode==="dark"?"داكن":"عادي")+" — الأصول الأربعة ثابتة كما هي");
+});
+if(mq.addEventListener)mq.addEventListener("change",()=>{if(mode==="auto")applyTheme();});
+/* ================= nav & reveal ================= */
+const links=$$("#navLinks a");
+const secObs=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+e.target.id));});
+},{rootMargin:"-40% 0px -55% 0px"});
+["studio","assets","colors"].forEach(id=>secObs.observe(document.getElementById(id)));
+const revObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");revObs.unobserve(e.target);}}),{threshold:.1});
+$$(".reveal").forEach(el=>revObs.observe(el));
+/* ================= init ================= */
+applyTheme();
+syncControls();
+doRender();
+ensureFonts().then(()=>doRender());
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{advCache.clear();doRender();});
+</script>
+</body>
+</html>
